@@ -1,4 +1,4 @@
-package com.example.java03_NAT.jdbc;
+package com.example.java3n_crud_sd18310.jdbc;
 
 import java.sql.*;
 
@@ -45,4 +45,3 @@ public class DatabaseConnectionManager {
         System.out.println("closed...");
     }
 }
-

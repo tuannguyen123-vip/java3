@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>java03_NAT</artifactId>
+    <artifactId>Java03_KT</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>java03_NAT</name>
+    <name>Java03_KT</name>
     <packaging>war</packaging>
 
     <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+    <maven.compiler.source>15</maven.compiler.source>
+    <maven.compiler.target>15</maven.compiler.target>
         <junit.version>5.7.0</junit.version>
     </properties>
 
