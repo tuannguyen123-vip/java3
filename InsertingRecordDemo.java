@@ -5,31 +5,31 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CreatingTableDemo {
+public class InsertingRecordDemo {
     public static void main(String[] args) {
         DatabaseConnectionManager dcm =
                 new DatabaseConnectionManager("test1", "sa", "123456");
+
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
 
         try {
-         connection = dcm.getConnection();
+            connection = dcm.getConnection();
             String sql = """
-    CREATE TABLE students(
-    id INT NOT NULL,
-    name NVARCHAR (30) NOT NULL,
-    email NVARCHAR (50) NOT NULL,
-    phone NVARCHAR (15) NOT NULL,
-    PRIMARY KEY (id)
-    );
-    """;
+             INSERT INTO students(id, name, email, phone)     
+             VALUES (?,?,?,?);
+                      """;
 
-         preparedStatement = connection.prepareStatement(sql);
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setLong(1, 1001L);
+            preparedStatement.setString(2,"student 2");
+            preparedStatement.setString(3, "email 3");
+            preparedStatement.setString(4, "phone 4");
 
-         preparedStatement.execute();
+            preparedStatement.executeUpdate();
 
-         System.out.println("done...");
+            System.out.println("done...");
 
         }catch (SQLException e){
             e.printStackTrace();
