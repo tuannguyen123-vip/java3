@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>Nat_kt</artifactId>
+    <artifactId>java03_NAT</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Nat_kt</name>
+    <name>java03_NAT</name>
     <packaging>war</packaging>
 
     <properties>

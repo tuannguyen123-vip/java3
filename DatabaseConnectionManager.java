@@ -1,4 +1,4 @@
-package com.example.Nat_kt.jdbc;
+package com.example.java03_NAT.jdbc;
 
 import java.sql.*;
 
